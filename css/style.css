@@ -16,8 +16,57 @@ html {
 
 .page {
 	height: 100vh;
+	padding: 15px;
 	background-image: url(../images/background.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+aside {
+	position: absolute;
+	top: 0;
+	right: -130px;
+	transform: rotate(90deg);
+	transform-origin: 0 50%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 85%;
+}
+
+main div {
+	padding: 30px 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+main div h1 {
+	margin-bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+	.page {
+		padding: 15px 50px;
+	}
+
+	aside {
+		top: 10px;
+		right: -100px;
+	}
+
+	main div {
+		width: 60%;
+		max-width: 800px;
+		margin-left: 100px;
+	}
+
+	footer p {
+		float: right;
+		width: 25%;
+		text-align: right;
+	}
 }
